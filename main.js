@@ -11,7 +11,7 @@ var kilometers = document.getElementById("kilometers");
 
 let sprites = {
   running: {
-    src: "./images/painani-runner-duplicate.png",
+    src: "images/painani-runner-duplicate.png",
     width: 250,
     height: 500
   }
@@ -88,7 +88,7 @@ class Obstacle {
     this.width = 140;
     this.height = 120;
     this.image = new Image();
-    this.image.src = "./images/painani-obstacle-removebg-preview.png";
+    this.image.src = "images/painani-obstacle-removebg-preview.png";
   }
 
   draw() {
@@ -104,7 +104,7 @@ class Reward {
     this.width = 60;
     this.height = 40;
     this.image = new Image();
-    this.image.src = "./images/fish-removebg-preview.png";
+    this.image.src = "images/fish-removebg-preview.png";
   }
 
   draw() {
@@ -170,7 +170,7 @@ function gameOver() {
   ctx.font = "80px 'Bellota Text', cursive";
   ctx.fillText("You failed!!", 300, 200);
   const image = new Image();
-  image.src = "./images/loss-image-removebg-preview.png";
+  image.src = "images/loss-image-removebg-preview.png";
   image.addEventListener(
     "load",
     () => {
@@ -186,7 +186,7 @@ function winGame() {
   ctx.font = "80px 'Bellota Text', cursive";
   ctx.fillText("Mission accomplished!!", 100, 200);
   const image = new Image();
-  image.src = "./images/win-image-removebg-preview.png";
+  image.src = "images/win-image-removebg-preview.png";
   image.addEventListener(
     "load",
     () => {
